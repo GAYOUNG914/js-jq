@@ -1,0 +1,99 @@
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#lnb {
+  position: fixed;
+  width: 300px;
+  background: deepskyblue;
+  height: 100vh;
+  z-index: 300;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#lnb h1 a,#lnb ul li a {
+  color: #ffffff;
+}
+
+#lnb ul li a:hover {
+  color: #f7d3d2;
+}
+
+#lnb ul {
+  margin-top: 20px;
+}
+
+#lnb ul li a {
+  height: 30px;
+  line-height: 30px;
+}
+
+/*menutree css*/
+#lnb .menutree_wrap{
+  background: deepskyblue;
+  margin-top: 10px;
+}
+
+#lnb .menutree_wrap h2{
+  font-size: 20px;
+}
+
+#lnb .menutree_wrap .menutree .title{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#lnb .menutree_wrap .menutree .title:hover{
+  color: #007ccc;
+}
+
+#lnb .menutree_wrap .menutree .submenu > li{
+  font-size: 14px;
+  color: #666;
+}
+
+
+#container {
+  padding-left: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#rnb {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background: #f1f1f1;
+}
+
+#rnb ul {
+  overflow: hidden;
+  float: right;
+}
+
+#rnb ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.contents {
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background: #f1f1f1;
+}
+
+@media screen and ( max-width: 1200px ) {
+  #wrap {
+    width: 100%;
+  }
+}

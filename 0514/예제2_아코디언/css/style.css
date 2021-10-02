@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color:#666666; transition: 1s; }
+ul,ol{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+
+.title{
+  text-align: center;
+}
+h1{
+  display: inline-block;
+  color: #444;
+  font-size: 60px;
+}
+
+dl{
+  width: 600px;
+  margin: 50px auto;
+  border: 1px solid #12a55a;
+  border-bottom: none;
+}
+
+dt{
+  position: relative;
+  font-size: 18px;
+  height: 35px;
+  line-height: 35px;
+  text-indent: 48px;
+  color: #12a55a;
+  background: #fff;
+  border-bottom: 1px solid #12a55a;
+}
+
+dt span{
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+dd{
+  height: 300px;
+  background: #c4e5d7;
+}
+
+dd p{
+  padding: 20px;
+}

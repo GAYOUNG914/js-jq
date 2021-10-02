@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+html,body{ height: 100%; }
+ul,ol{ list-style: none; }
+
+a.on{
+  color: red;
+  border: 2px solid red;
+
+}
+
+ul{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+ul li:nth-child(1) a{
+  background-image: url('../img/img01.jpg');
+}
+
+ul li:nth-child(2) a{
+  background-image: url('../img/img02.jpg');
+}
+
+ul li:nth-child(3) a{
+  background-image: url('../img/img03.jpg');
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body,a{ color: #666; }
+ul,ol{ list-style: none; }
+p{ color: red; }
+
+.box{
+  background-color: red;
+}

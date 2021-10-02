@@ -1,0 +1,481 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color: #666666; }
+ul,li{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+
+/*너비 최소값 지정*/
+#mainbanner,#container section,#footer{
+  min-width: 1320px;
+}
+
+#wrap{
+  width: 1320px;
+  margin: 0 auto;
+}
+
+
+/*상단 고정형 메인메뉴*/
+
+#header{
+  position: fixed;
+  width: 1320px;
+  top: 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #fff;
+}
+
+@media screen and ( max-width: 1320px ) {
+  #header{
+    width: 100%;
+  }
+}
+
+#header .inner{
+  float: right;
+  overflow: hidden;
+}
+
+#header .inner #login_menu, #header .inner #gnb{ float: left; }
+
+#logo{
+  float: left;
+  margin-top: 20px;
+}
+
+#logo img{
+  width: 110px;
+  height: 29px;
+}
+
+#logo a:after{
+  content: '현대그린푸드';
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+
+/*gnb login menu 공통영역*/
+#header .inner ul > li{
+  float: left;
+}
+
+#header .inner ul > li a{
+  line-height: 24px
+}
+
+/*gnb 영역*/
+#gnb{
+  overflow: hidden;
+  margin-top: 30px;
+  /*margin-right: 106px;*/
+}
+
+#gnb li{
+  margin-left: 50px;
+}
+
+#gnb .dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+#gnb .dropdown .dropbtn{
+  color: #fff;
+  background: none;
+  padding: 10px;
+}
+
+#gnb .dropdown-content{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: linear-gradient( rgba(0, 0, 0, 9.5), rgba(0, 0, 0, 9.5) );
+  min-width: 1000px;
+  min-height: 1000px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#gnb .dropdown-content a{
+  color: #000;
+  padding: 12px 16px;
+  display: block;
+}
+
+#gnb .dropdown-content a:hover{
+  color: #46675c;
+}
+
+#gnb .dropdown:hover .dropdown-content{
+  display: block;
+  font-weight: bold;
+}
+
+#gnb .dropdown:hover .dropbtn{
+  font-weight: bold;
+  border-bottom: 3px solid #fff;
+}
+
+#gnb li:first-child{
+  margin-left: 0px;
+}
+
+/*로그인 메뉴 영역*/
+#login_menu{
+  position: absolute;
+  overflow:hidden;
+  right: 15px;
+  top: 5px;
+}
+
+#login_menu li{
+  margin-left: 32px;
+}
+
+#login_menu li select{
+  width: 87px;
+  height: 28px;
+  border: none;
+  background-color: #bdbdbb;
+  color: #fff;
+}
+
+#login_menu li select:focus{
+  outline: none;
+}
+
+#login_menu li:first-child{
+  margin-left: 0;
+}
+
+#login_menu li:nth-child(2){
+  width: 107px;
+  height: 28px;
+  font-size: 15px;
+  background-color: #9e9e9d;
+  text-align: left;
+  color: #fff;
+}
+
+#login_menu li img{
+  width: 30px;
+  height: 30px:
+}
+
+
+/*메인 배너 영역*/
+#mainbanner{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/kitchen(1).jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#mainbanner .inner{
+  position: relative;
+  width: 1320px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#mainbanner .main_text{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  /* min-height: 254px; */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*메인배너 메인타이틀*/
+#mainbanner .maintitle{
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+/*메인배너 서브타이틀*/
+#mainbanner .subtitle{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.common_btn{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #46675c;
+  font-weight: bold;/*700*/
+  color: white;
+}
+
+.common_btn:hover{
+  background: none;
+  border: 1px solid #46675c;
+  color: #fff;
+}
+
+/*section 영역*/
+/*section inner 공통 영역*/
+
+#container section .inner{
+  width: 1320px;
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container section .inner h2{ /*얘는 seciton 2, 3애*/
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #333333;
+}
+
+#container section .inner .subtitle{/*section 1빼고 다있음*/
+  margin-top: 27px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+}
+
+
+#container section:nth-of-type(1) .inner{
+  padding-top: 165px;
+  min-height: 485px;
+}
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+#container section:nth-child(even){
+  background: #f9f9f9;
+}
+
+#container section .inner .box_wrap{
+  overflow:
+}
+
+#container section .inner .box_wrap li{
+  float: left;
+  width: calc( 25% - 40px );
+  padding: 0 20px;
+}
+
+#container section .inner .box_wrap li .items{
+  border: 1px solid #e3e3e3;
+  padding: 45px 0;
+  min-height: 180px;
+}
+
+#container section .inner li:nth-child(1) .items{
+  background: url('../img/급식사업.jpg') center center;
+}
+#container section .inner li:nth-child(2) .items{
+  background: url('../img/외식사업.jpg') center center;
+}
+#container section .inner li:nth-child(3) .items{
+  background: url('../img/리테일사업.jpg') center center;
+}
+#container section .inner li:nth-child(4) .items{
+  background: url('../img/식자재유통사업.jpg') center center;
+}
+#container section .inner li:nth-child(5) .items{
+  background: url('../img/해외사업.jpg') center center;
+}
+#container section .inner li:nth-child(6) .items{
+  background: url('../img/건강식사업.jpg') center center;
+}
+
+#container section .inner .box_wrap li .items h3{
+  font-size: 20px;
+  line-height: 20px;
+  color: #252525;
+}
+
+#container section .inner .box_wrap li .items p{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+
+/*section 2번 style*/
+#container section .inner .box{
+  float: left;
+  width: 50%;
+  min-height: 650px;
+  text-align: center;
+}
+
+#container section .inner .box.img{
+  background-size: cover;
+}
+
+#container section:nth-child(2) .inner .box.img{
+  background: url('../img/vegetables.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#container section:nth-child(3){
+  background-image: url('../img/organic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: calc( 50% + 512px ) center;
+}
+
+#container section:nth-child(4){
+  background: #1d314a;
+}
+
+#container section:nth-child(4) .inner h2{
+  color: white;
+}
+
+#container section:nth-child(4) .inner .box.img{
+  background: url('../img/appetizer.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#container section .inner .box .text_box{
+  display: inline-block; /*class=box img 너비를 50%로 정해줬으니 나머지 50먹으려면 inline속성을 갖고있어야함*/
+  text-align: left;
+  margin-top: 160px;
+}
+
+#container section .inner .box .text_box .common_btn{
+  text-align: center;
+}
+
+/*footer 영역*/
+
+#footer{
+  background: #eeeeee;
+}
+
+#footer .inner{
+  position: relative;
+  width: 1320px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#footer .inner .f_box{
+  float: left;
+}
+
+#footer .inner .f_box:nth-of-type(2){
+  padding-left: 75px;
+}
+
+/*footer site menu*/
+#footer .inner .f_box ul{
+  overflow: hidden;
+}
+
+#footer .inner .f_box ul li{
+  height: 20px;
+  float: left;
+  margin-right: 57px;
+}
+
+#footer .inner .f_box ul li:last-child{
+  margin-right: 0px;
+}
+
+#footer .inner .f_box ul li a{
+  line-height: 20px;
+  color: #333333;
+}
+
+#footer .inner .f_box .tel{
+  margin-top: 20px;
+}
+
+#footer .inner .f_box .tel a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#footer .inner .f_box .copyright{
+  font-size: 12px;
+  line-height: 14px;
+  color: #777777;
+  margin-top: 23px;
+}
+
+#familysite{
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 40px;
+  right: 20px;
+  outline: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-left: 15px;
+  padding-right: 30px;
+  border: 1px solid #d1d1d1;
+  background-color: white;
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc( 100% - 15px ) center;
+  color: #333333;
+}
+
+#familysite:focus{
+  border: 1px solid #999999;
+  background-image: url('../img/select_box_arrow_focus.png');
+}

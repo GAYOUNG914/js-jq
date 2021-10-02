@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+html,body{ height: 100%; }
+ul,ol{ list-style: none; }
+
+a.on{
+  color: red;
+}
+
+a.on:after{
+  /*텍스트 형태 메뉴 사용 시 적용*/
+  /*text underline 추가*/
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: red;
+}
+
+ul{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
